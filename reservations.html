@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hotel Booking - Delight Stays</title>
+  <link rel="stylesheet" href="reservations.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>Delight Stays</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="reservations.html">Reservations</a></li>
+        <li><a href="order.html">Order Online</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Booking Form -->
+  <main>
+    <section class="booking-section">
+      <h2>Book Your Stay</h2>
+      <p>Experience comfort and luxury at Delight Stays. Fill out the form to reserve your room.</p>
+
+      <form action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="deca50b0-5e76-42a8-93fc-d789f43f6507">
+
+        <input type="text" name="name" placeholder="Your Full Name" required />
+        <input type="email" name="email" placeholder="Email Address" required />
+        <input type="tel" name="phone" placeholder="Phone Number" required />
+
+        <div class="form-group">
+          <label>Check-in Date</label>
+          <input type="date" name="checkin_date" required />
+        </div>
+
+        <div class="form-group">
+          <label>Check-out Date</label>
+          <input type="date" name="checkout_date" required />
+        </div>
+
+        <div class="form-group">
+          <label>Room Type</label>
+          <select name="room_type" required>
+            <option value="" disabled selected>Select Room Type</option>
+            <option value="Standard">Standard</option>
+            <option value="Deluxe">Deluxe</option>
+            <option value="Suite">Suite</option>
+          </select>
+        </div>
+
+        <textarea name="special_requests" placeholder="Special Requests (Optional)"></textarea>
+
+        <input type="hidden" name="redirect" value="sucess.html">
+        <button type="submit">Confirm Booking</button>
+      </form>
+
+      <p class="image-placeholder">[Hotel image will go here]</p>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Delight Stays. All rights reserved.</p>
+    <p>456 Comfort Avenue, Romford, London | 01234 567890</p>
+    <div class="social">
+      <a href="#">Facebook</a>
+      <a href="#">Instagram</a>
+      <a href="#">Twitter</a>
+    </div>
+  </footer>
+</body>
+</html>

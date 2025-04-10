@@ -1,0 +1,149 @@
+/* Reset and Body */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+   background-image: url(images/PRIMA_FOOD2_INTERIORS_SELECT__57.0.webp);/* Changed background color */
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Header */
+  header {
+    background-color: #fff;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  header h1 {
+    color: #e63946;
+    font-size: 28px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+  
+  nav a:hover {
+    color: #e63946;
+  }
+  
+  /* Booking Section */
+  .booking-section {
+    max-width: 600px;
+    margin: 40px auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+  }
+  
+  .booking-section h2 {
+    text-align: center;
+    color: #003366;
+    margin-bottom: 10px;
+  }
+  
+  .booking-section p {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #555;
+  }
+  
+  form {
+    display: grid;
+    gap: 15px;
+  }
+  
+  input, select, textarea {
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+    width: 100%;
+  }
+  
+  textarea {
+    resize: vertical;
+    min-height: 80px;
+  }
+  
+  button {
+    background-color: #003366;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #002244;
+  }
+  
+  .image-placeholder {
+    text-align: center;
+    margin-top: 20px;
+    font-style: italic;
+    color: #aaa;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #333;
+    color: #eee;
+    padding: 20px 0;
+    text-align: center;
+    width: 100%; /* Ensures the footer stretches across the entire screen width */
+    margin-top: 50px;
+  }
+  
+  footer .social {
+    margin-top: 10px;
+  }
+  
+  footer .social a {
+    margin: 0 10px;
+    color: #eee;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  footer .social a:hover {
+    color: #e63946;
+  }
+  
+  /* Responsive */
+  @media (max-width: 600px) {
+    nav ul {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .booking-section {
+      padding: 20px;
+    }
+  }
+  
