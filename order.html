@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Order Online - Delight Bites</title>
+  <link rel="stylesheet" href="order.css" />
+</head>
+
+<body>
+  <header>
+    <h1>Delight Bites</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="reservations.html">Reservations</a></li>
+        <li><a href="order.html">Order Online</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="order-section">
+      <h2>Order Online</h2>
+      <p>Select your favorite dishes and place your order below!</p>
+
+      <form action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="deca50b0-5e76-42a8-93fc-d789f43f6507">
+
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+
+        <div class="menu-item">
+          <label>
+            <input type="checkbox" name="order[]" value="Paneer Tikka"> Paneer Tikka (£8.99)
+          </label>
+          <input type="number" name="Paneer Tikka_qty" min="0" placeholder="Qty">
+        </div>
+
+        <div class="menu-item">
+          <label>
+            <input type="checkbox" name="order[]" value="Veg Biryani"> Veg Biryani (£9.99)
+          </label>
+          <input type="number" name="Veg Biryani_qty" min="0" placeholder="Qty">
+        </div>
+
+        <div class="menu-item">
+          <label>
+            <input type="checkbox" name="order[]" value="Masala Dosa"> Masala Dosa (£7.49)
+          </label>
+          <input type="number" name="Masala Dosa_qty" min="0" placeholder="Qty">
+        </div>
+
+        <div class="menu-item">
+          <label>
+            <input type="checkbox" name="order[]" value="Chole Bhature"> Chole Bhature (£6.99)
+          </label>
+          <input type="number" name="Chole Bhature_qty" min="0" placeholder="Qty">
+        </div>
+
+        <textarea name="message" placeholder="Any special requests?" rows="4"></textarea>
+
+        <button type="submit">Place Order</button>
+      </form>
+
+      <div class="image-placeholder">
+        <img src="images/dishes.jpg" alt="Delicious dishes from our menu" />
+      </div>
+    </section>
+  </main>
+
+
+  <footer>
+    <p>&copy; 2025 Delight Bites. All rights reserved.</p>
+    <p>123 Food Street, Romford, London | 01234 567890</p>
+    <div class="social">
+      <a href="#">Facebook</a>
+      <a href="#">Instagram</a>
+      <a href="#">Twitter</a>
+    </div>
+  </footer>
+</body>
+</html>
