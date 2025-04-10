@@ -1,0 +1,170 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Header styling */
+  header {
+    background-color: #2c2c2e;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header h1 {
+    color: #f94f4f;
+    font-size: 28px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #f8f8f8;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+  
+  nav a:hover {
+    color: #f94f4f;
+  }
+  
+  /* Contact Section */
+  .contact-section {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 40px 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.05);
+  }
+  
+  .contact-section h2 {
+    text-align: center;
+    font-size: 36px;
+    color: #003366;
+    margin-bottom: 20px;
+  }
+  
+  .contact-section p {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 18px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  input, textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  textarea {
+    resize: vertical;
+  }
+  
+  button {
+    padding: 12px;
+    background-color: #f94f4f;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #d62839;
+  }
+  
+  .image-placeholder {
+    text-align: center;
+    background-color: #ddd;
+    color: #555;
+    padding: 20px;
+    font-style: italic;
+    margin-top: 30px;
+    border-radius: 6px;
+  }
+  
+  /* Google Maps styling */
+  .maps {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .maps iframe {
+    width: 100%;
+    max-width: 600px; /* Max width of map */
+    height: 450px;
+    border-radius: 8px;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #2c2c2e;
+    color: #ccc;
+    padding: 20px 40px;
+    text-align: center;
+    margin-top: 40px;
+  }
+  
+  footer .social {
+    margin-top: 10px;
+  }
+  
+  footer .social a {
+    margin: 0 10px;
+    color: #ccc;
+    text-decoration: none;
+  }
+  
+  footer .social a:hover {
+    color: #f94f4f;
+  }
+  
+  /* Responsive */
+  @media (max-width: 600px) {
+    nav ul {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+    }
+  
+    .contact-section {
+      padding: 20px;
+    }
+  
+    input, textarea, button {
+      font-size: 14px;
+    }
+  
+    /* Map adjustments for small screens */
+    .maps iframe {
+      width: 100%;
+      max-width: 100%;
+      height: 300px;
+    }
+  }
+  
